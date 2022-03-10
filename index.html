@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header id="home">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-gradient fixed-top" style="--bs-bg-opacity: .5;">
             <div class="container position-relative">
               <div class="row">
                   <div class="col-md-4">
@@ -29,16 +29,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#bags">Backpack</a>
                           </li> 
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                           </li>               
                         </ul>
                   </div>
@@ -47,8 +47,8 @@
             </div>
         </nav>
         <!-- image slider -->
-        <div id="carouselExampleControls" class="container carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner bg-info p-4 rounded-3">
+        <div id="carouselExampleControls" class="container carousel slide my-10" data-bs-ride="carousel">
+            <div class="carousel-inner p-4 rounded-3" style="background-color: #fceae8;">
               <div class="carousel-item active">
                 <div class="row d-flex align-items-center">
                     <div class="col-md-7">
@@ -110,7 +110,7 @@
                </div>
               </div>
               <div class="col-md-4 my-2">
-                <div class="p-3 border bg-info d-flex align-items-center justify-content-between rounded-3"">
+                <div class="p-3 border d-flex align-items-center justify-content-between rounded-3" style="background-color: orchid;">
                   <h1 class="text-white">Bag</h1>
                   <img class="w-25" src="assets/images/categories/bag.png" alt="">
                 </div>
@@ -125,7 +125,7 @@
           </div>
         </section>
         <!-- shoes -->
-        <section class="container">
+        <section class="container" id="shoes">
           <div class="shoes-text d-flex justify-content-between px-2">
             <h2>Shoes</h2>
             <a href="#" class="link-warning text-decoration-none">See All</a>
@@ -172,8 +172,8 @@
             </div>
           </div>
         </section>
-        <!-- bag -->
-        <section class="container my-5">
+        <!-- bags -->
+        <section class="container my-5" id="bags">
           <div class="shoes-text d-flex justify-content-between px-2">
             <h2>Backpack</h2>
             <a href="#" class="link-warning text-decoration-none">See All</a>
@@ -220,9 +220,18 @@
             </div>
           </div>
         </section>
+        <!-- Subscribe -->
+        <section class="container d-flex justify-content-center align-items-center my-5" id="subscribe" style="background-color: #fceae8; height: 300px;">
+          <div>
+            <h1>LET'S STAY IN TOUCH</h1>
+            <p>Get updates on sales, specials and more</p>
+            <input type="text"> <br>
+            <button type="button" class="btn btn-success">Submit</button>
+          </div>
+        </section>
     </main>
     <footer>
-
+      <p class="text-center"><small>&copy;2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
     <!-- javascript -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
